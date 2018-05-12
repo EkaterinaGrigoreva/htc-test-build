@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-
 <html>
+<meta charset=utf-8/>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Авторизация</title>
+	<style>
+	body{background:#050009}
+	
+	h1{
+		color: gray;
+		text-align: center;
+	}
+	
+	p {		
+		width: 50%
+		color: gray;
+	}
+	
+	input {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	* {
+	margin: 0;
+	}
+	</style>
 </head>
 <body>
+	<h1>Авторизация</h1>
+	<hr />
+	<img src="D:\Projects\SmartGitRepository\htc-test-build\htc-test-build.git\background1.jpg" width="100%" height="100%"/>
+	<center><p><strong>Логин</strong></p>
+	<label for="E-mail">E-mail:</label><input type="text" value="" id="E-mail" placeholder="E-mail" title="Заполните это поле" maxlength="200"/>
+	<p><strong>Пароль</strong></p>
+	<label for="password">Пароль:</label><input type="password" value="" id="password" placeholder="password" title="Заполните это поле" maxlength="200"/></center>
+	<center><input type="button" value="Войти"/></center>
+	<footer>
+	<span id="date" style="color:blue;">Дата</span>&nbsp;&nbsp;&nbsp;
+	Текущее время - <span id="time" style="color:green;">Время</span>
+	<script type="text/javascript">
+		function clock() {
+		var d = new Date();
+		var day = d.getDate();
+		var hours = d.getHours();
+		var minutes = d.getMinutes();
+		var seconds = d.getSeconds();
 
+		month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+		"июля", "августа", "сентября", "октября", "ноября", "декабря");
+		days=new Array("Воскресенье", "Понедельник", "Вторник", "Среда",
+		"Четверг", "Пятница", "Суббота");
+
+		if (day <= 9) day = "0" + day;
+		if (hours <= 9) hours = "0" + hours;
+		if (minutes <= 9) minutes = "0" + minutes;
+		if (seconds <= 9) seconds = "0" + seconds;
+
+		date_date = day + " " + month[d.getMonth()] + " " + d.getFullYear() + " г. (" +
+		days[d.getDay()] + ")";
+		date_time = hours + ":" + minutes + ":" + seconds;
+
+		if (document.layers) {
+		document.layers.date.document.write(date_time);
+		document.layers.date.document.close();
+		document.layers.time.document.write(date_time);
+		document.layers.time.document.close();
+		}
+		else {
+		document.getElementById("date").innerHTML = date_date;
+		document.getElementById("time").innerHTML = date_time;
+		}
+		setTimeout("clock()", 1000);
+		}
+		clock();
+</script>
+	</footer>
 </body>
-<footer></footer>
 </html>
