@@ -7,24 +7,38 @@ html {
 	margin: 0;
 }
 
+h1 {
+	color: #9BD1CF;
+	font-size: 50px;
+	text-align: center;
+}
+	
 p {
 	color: #254140;
-	font-size: 25px;
+	font-size: 30px;
 	width: 50%;
 }
 	
 label {
 	font-size: 10px;
 }
-	
-h1 {
-	color: #9BD1CF;
-	text-align: center;
+
+.font {
+	font-family: Lobster;
 }
 	
 input {
+	background-color: #DCFFFE;
 	margin-bottom: 10px;
 	margin-top: 0px;
+}
+
+#block {
+	margin-top: 250px;
+}
+
+#footer {
+	margin-top: 250px;
 }
 
 #date {
@@ -33,10 +47,6 @@ input {
 	
 #time, #current {
 	 color: #FFAE40;
-}
-
-input {
-	background-color: #DCFFFE;
 }
 
 button {
