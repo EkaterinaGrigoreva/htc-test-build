@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+}
+
+html {
+	background-color: #050009;
+	background: url('background1.jpg') center top;
+}
+	
+p {
+	color: #254140;
+	font-size: 25px;
+	width: 50%;
+}
+	
+label {
+	font-size: 10px;
+}
+	
+h1 {
+	color: #9BD1CF;
+	text-align: center;
+}
+	
+input {
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+#date {
+	color: #01939A;
+}
+	
+#time, #current {
+	 color: #FFAE40;
+}
+
+input {
+	background-color: #DCFFFE;
+}
+
+button {
+	background-color: #FFAD73;
+}
+
+button:hover {
+	background-color: #FF8F40;
+}
+
+button:active {
+	background-color: #A64500;
+}
+
