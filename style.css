@@ -1,12 +1,12 @@
+html {
+	background: url('background1.jpg') center top no-repeat;
+	background-color: #050009;
+}
+
 * {
 	margin: 0;
 }
 
-html {
-	background-color: #050009;
-	background: url('background1.jpg') center top;
-}
-	
 p {
 	color: #254140;
 	font-size: 25px;
