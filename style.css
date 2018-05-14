@@ -26,6 +26,10 @@ label {
 .font {
 	font-family: Lobster;
 }
+
+label {
+	visibility: hidden;
+}
 	
 input {
 	background-color: #DCFFFE;
@@ -34,23 +38,30 @@ input {
 }
 
 #block {
-	margin-top: 250px;
+	margin-top: 260px;
 }
 
 #footer {
-	margin-top: 250px;
+	margin-top: 280px;
 }
 
 #date {
+	font-family: Poiret One;
+	font-size: 18px;
 	color: #01939A;
 }
 	
 #time, #current {
-	 color: #FFAE40;
+	font-family: Poiret One;
+	font-size: 18px;
+	color: #FFAE40;
 }
 
 button {
 	background-color: #FFAD73;
+	font-family: Poiret One;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 button:hover {
