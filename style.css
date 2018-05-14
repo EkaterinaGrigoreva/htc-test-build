@@ -21,14 +21,11 @@ p {
 	
 label {
 	font-size: 10px;
+	visibility: hidden;
 }
 
 .font {
 	font-family: Lobster;
-}
-
-label {
-	visibility: hidden;
 }
 	
 input {

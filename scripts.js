@@ -32,3 +32,9 @@
 	setTimeout("clock()", 1000);
 	}
 	clock();
+	
+	
+
+function signin () {
+	alert("Вы вошли в систему");
+}
