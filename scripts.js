@@ -38,6 +38,7 @@ function valid (form) {
 	var fail = false;
 	var login = form.login.value;
 	var password = form.password.value;
+	var pass_pattern = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
 	
 	if(login == "" || login == " ") 
 		fail = "Введите логин!";
@@ -48,8 +49,8 @@ function valid (form) {
 	else if(password == "" || password == " ") 
 		fail = "Введите пароль!";
 	
-	else if(password.length < 6 || password.length > 20) 
-		fail = "Пароль должен содержать не менее 6 и не более 20 символов";
+	else if (pass_pattern.test(password) == false)
+		fail = "- Пароль должен содержать хотя бы одно число; - хотя бы один спецсимвол; - хотя бы одну латинскую букву в нижнем регистре; - хотя бы одну латинскую букву в верхнем регистре; - состоять не менее, чем из 6 вышеупомянутых символов."
 	
 	if(fail) {
 		alert(fail);
