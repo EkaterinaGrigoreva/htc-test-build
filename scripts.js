@@ -1,4 +1,7 @@
-﻿function clock() {
+﻿
+// Функция отображения даты, дня недели, текущего времени 
+
+function clock() {
 	var d = new Date();
 	var day = d.getDate();
 	var hours = d.getHours();
@@ -33,6 +36,8 @@
 	}
 	clock();
 	
+	
+// Функция проверки валидности логина и пароля
 
 function valid (form) {
 	var fail = false;
@@ -56,5 +61,16 @@ function valid (form) {
 		alert(fail);
 	}
 	else {alert("Вы вошли в систему")}
+}
+
+// Функция предупреждения пользователя об устаревшей версии браузера, при использовании пользователем IE
+
+function detectIE(userAgent) {
+    userAgent = userAgent || navigator;
+    return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
+	
+	if(detectIE()){
+		document.querySelector('.warning-ie').classList.add('.show');
+	}
 }
 
