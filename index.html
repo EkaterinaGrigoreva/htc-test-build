@@ -11,11 +11,13 @@
 	<div id="block">
 	<center><p class="font">Логин</p></center>
 	<center><label for="login">E-mail:</label></center>
-	<center><input type="text" value="" id="login" placeholder="E-mail" title="Заполните это поле" maxlength="200"/></center>
+	<form action="" method="post" name="test" id="form">
+		<center><input type="text" id="login" name="login" placeholder="E-mail" title="Заполните это поле" maxlength="200"/></center>
 	<center><p class="font">Пароль</p></center>
 	<center><label for="password">Пароль:</label></center>
-	<center><input type="password" value="" id="password" placeholder="password" title="Заполните это поле" maxlength="200"/></center>
-	<center><button name="buttonsignin" onclick="signin(this)">Войти</button></center>
+		<center><input type="password" id="password" name="password" placeholder="password" title="Заполните это поле" maxlength="200"/></center>
+		<center><input type="button" class="button" onclick="valid(document.getElementById('form'))" name="submit" value="Войти"/></center>
+	</form>
 	</div>
 	<footer>
 		<div id="footer">

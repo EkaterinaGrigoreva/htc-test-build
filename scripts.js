@@ -33,8 +33,27 @@
 	}
 	clock();
 	
-	
 
-function signin () {
-	alert("Вы вошли в систему");
+function valid (form) {
+	var fail = false;
+	var login = form.login.value;
+	var password = form.password.value;
+	
+	if(login == "" || login == " ") 
+		fail = "Введите логин!";
+	
+	else if(login.indexOf('.', 0) == -1 || login.indexOf('@', 0) == -1) 
+		fail = "Некорректный E-mail!";
+	
+	else if(password == "" || password == " ") 
+		fail = "Введите пароль!";
+	
+	else if(password.length < 6 || password.length > 20) 
+		fail = "Пароль должен содержать не менее 6 и не более 20 символов";
+	
+	if(fail) {
+		alert(fail);
+	}
+	else {alert("Вы вошли в систему")}
 }
+

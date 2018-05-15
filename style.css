@@ -54,18 +54,18 @@ input {
 	color: #FFAE40;
 }
 
-button {
+.button {
 	background-color: #FFAD73;
 	font-family: Poiret One;
 	font-weight: bold;
 	font-size: 20px;
 }
 
-button:hover {
+.button:hover {
 	background-color: #FF8F40;
 }
 
-button:active {
+.button:active {
 	background-color: #A64500;
 }
 
