@@ -2,13 +2,18 @@
 <html>
 <head>
 	<meta charset=utf-8/>
+	<!--[if lte IE 7]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+	<!--[if lte IE 8]><script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script><![endif]-->
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="/reject/reject.css" media="all" />
+	<script type="text/javascript" src="/reject/reject.min.js" data-text="Unfortunately, the browser you use, outdated and can not properly display the site. Please download any of the following browsers:"></script>
+	<![endif]-->
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<title>Авторизация</title>
 </head>
 <body>
 	<h1 class="font">Авторизация</h1>
 	<hr/>
-	<div class="warning-ie"> Ваш браузер устарел!!!</div>
 	<div id="block">
 	<center><p class="font">Логин</p></center>
 	<center><label for="login">E-mail:</label></center>

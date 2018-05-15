@@ -63,14 +63,3 @@ function valid (form) {
 	else {alert("Вы вошли в систему")}
 }
 
-// Функция предупреждения пользователя об устаревшей версии браузера, при использовании пользователем IE
-
-function detectIE(userAgent) {
-    userAgent = userAgent || navigator;
-    return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1 || userAgent.indexOf("Edge/") > -1;
-	
-	if(detectIE()){
-		document.querySelector('.warning-ie').classList.add('.show');
-	}
-}
-
